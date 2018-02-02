@@ -12,6 +12,7 @@
 		1ACB15DE20246F2C00714B05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ACB15DC20246F2C00714B05 /* Main.storyboard */; };
 		1ACB15E020246F2C00714B05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ACB15DF20246F2C00714B05 /* Assets.xcassets */; };
 		1ACB15E320246F2C00714B05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ACB15E120246F2C00714B05 /* LaunchScreen.storyboard */; };
+		33BF657AE46BD0A3693F9119 /* Pods_SixtChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9F24A3CE5321338D50CD58 /* Pods_SixtChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		1ACB15DF20246F2C00714B05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ACB15E220246F2C00714B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ACB15E420246F2C00714B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BD0A75B9B09E13DFF55213 /* Pods-SixtChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SixtChat/Pods-SixtChat.release.xcconfig"; sourceTree = "<group>"; };
+		A3E9D02AA31601F86C424DCA /* Pods-SixtChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SixtChat/Pods-SixtChat.debug.xcconfig"; sourceTree = "<group>"; };
+		FB9F24A3CE5321338D50CD58 /* Pods_SixtChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SixtChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33BF657AE46BD0A3693F9119 /* Pods_SixtChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				1ACB15D720246F2C00714B05 /* SixtChat */,
 				1ACB15D620246F2C00714B05 /* Products */,
+				BD93BB0D9B96229FA17761BE /* Pods */,
+				A84EC97A4F7C911723B9B0E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = SixtChat;
 			sourceTree = "<group>";
 		};
+		A84EC97A4F7C911723B9B0E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB9F24A3CE5321338D50CD58 /* Pods_SixtChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD93BB0D9B96229FA17761BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3E9D02AA31601F86C424DCA /* Pods-SixtChat.debug.xcconfig */,
+				47BD0A75B9B09E13DFF55213 /* Pods-SixtChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1ACB15E720246F2C00714B05 /* Build configuration list for PBXNativeTarget "SixtChat" */;
 			buildPhases = (
+				B24C564BC5229A61E5641259 /* [CP] Check Pods Manifest.lock */,
 				1ACB15D120246F2C00714B05 /* Sources */,
 				1ACB15D220246F2C00714B05 /* Frameworks */,
 				1ACB15D320246F2C00714B05 /* Resources */,
+				049065EE1D16A1394D20ED31 /* [CP] Embed Pods Frameworks */,
+				6E9074D2D40699B3DC5AA723 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		049065EE1D16A1394D20ED31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SixtChat/Pods-SixtChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AI/AI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SixtChat/Pods-SixtChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E9074D2D40699B3DC5AA723 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SixtChat/Pods-SixtChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B24C564BC5229A61E5641259 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SixtChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1ACB15D120246F2C00714B05 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		1ACB15E820246F2C00714B05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E9D02AA31601F86C424DCA /* Pods-SixtChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +369,7 @@
 		};
 		1ACB15E920246F2C00714B05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47BD0A75B9B09E13DFF55213 /* Pods-SixtChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
